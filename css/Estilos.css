@@ -1,0 +1,276 @@
+/* Generales */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;     
+    text-decoration-style:none;     
+    list-style: none;     
+    color: #000;     
+}
+.header {
+    background-color: whitesmoke; 
+    border-radius: 2px solid black;
+    font-size: 20px;
+}
+#LogoPrincipal {
+    position: relative;
+    margin-right: 35px;
+    width: 100px;
+    height: 100px;
+}
+/* Fin generales */
+/* NavBar */
+.NavBarCenter {
+    display: flex;
+    justify-content: space-between;
+    width: 965px !important;
+}
+/* Fin NavBar */
+/* Index */
+main {
+    background-color: rgb(185, 185, 185);
+}
+.ArticleMain1 {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/Index\ 3.jpeg);
+}
+.ArticleMain1
+.Main1{
+    width: 1000px;
+    height: 570px;
+    background-image: url(../img/Index1.jpeg); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Main1 h1 {
+    width: 400px;
+    height: 320px;
+    font-size: 70px;
+    color: rgb(87, 87, 87);
+}
+.Main1 p {
+    font-size: 20px;
+    margin-top: 50px;
+}
+.ArticleMain2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-image: url(../img/Index2.jpeg);
+    background-repeat: no-repeat;
+    height: 570px;
+}
+.DivMain1 {
+    margin-top: 70px;
+    width: 640px;
+    height: 350px;
+    font-size: 40px;  
+    margin-right: 100px;
+}
+/* Fin index */
+/* Quienes somos */
+.MainQS {
+    display: flex;
+    height: 900px;
+    align-items: center;
+    justify-content: space-around;
+}
+.Section1Qs {
+    padding-top: 20px;
+}
+.Section1QS h1 {
+    font-size: 40px;
+}
+.Section1QS p {
+    font-size: 25px;
+    height: 150px;
+    width: 600px;
+}
+.Div1QS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin-top: -50px;
+}
+.Article1QS {
+    position: relative;
+    top: -20px;
+}
+.Section2QS {
+    padding: 40px;
+}
+.Section1QS h2 {
+    font-size: 40px; 
+}
+/* Fin Quienes somos */
+/* Productos */
+.MainP {
+    height: 900px;
+}
+.Div1P {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.Div2P {
+    padding-top: 20px;
+}
+.ImgP {
+    height: 300px;
+    width: 300px;
+}
+/* Fin de productos */
+/* Galeria */
+.Div1G {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.Div1G p {
+    text-align: center;
+}
+.Div2G {
+    padding-bottom: 80px;
+    padding-left: 12px;
+}
+.ImagenesG {
+    display: flex;
+    justify-content: center;
+}
+.ImgG {
+  height: 300px;
+  width: 300px;
+  padding-top: 30px;  
+}
+.DivImg {
+    width: 340px;
+}
+
+/* Fin galeria */
+/* Contacto */
+.SectionContacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.DatosDeContacto {
+    display: flex;
+    flex-direction: column;
+
+}
+.RedesSociales {
+    display: flex;
+    flex-direction: row;
+}
+.ArticleContact1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-top: 60px;
+}
+.ArticleContact1 h1 {
+    position: relative;
+    top: -40px;
+    padding-left: 20px;
+
+}
+.IconosDeContacto2 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.ItemsFormulario {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.BotonesFormulario {
+display: flex;
+justify-content: center;
+}
+@media screen and (max-width:426px){
+    .SectionContacto {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin-right: 18px;
+        justify-content: center;
+    }
+    .ArticleFormulario{
+        padding-left: 10px;
+    }
+    .h1C {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .footer {
+        font-size: 60%;
+        height: 279px;
+    }
+}
+/* Fin Contacto */
+/* Footer */
+footer {
+    background-color: whitesmoke;
+}
+#logoFooter {
+    position: relative;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+
+}
+.footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Footer3 h2 {
+    font-size: 25px;
+}
+.Footer3 {
+    position: relative;
+    margin-top: 15px;
+}
+.ListasFooter {
+    position: relative;
+    right: 25px;
+}
+.Copyright {
+    margin: 10px;
+    text-align: center;
+}
+@media screen and (max-width:426px){
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.DivLogoFooter {
+    display: none;
+}
+}
+/* Fin footer */
+
+
+
+
