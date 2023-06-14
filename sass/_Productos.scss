@@ -1,0 +1,19 @@
+.SectionP {
+    padding-bottom: 30px;
+    .Div1P {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .Div2P {
+        padding-top: 20px;
+        .ImgP {
+            height: 300px;
+            width: 300px;
+        }
+    }
+}
+

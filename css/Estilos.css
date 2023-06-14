@@ -1,276 +1,350 @@
-/* Generales */
-*{
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-}
-a {
-    text-decoration: none;     
-    text-decoration-style:none;     
-    list-style: none;     
-    color: #000;     
-}
-.header {
-    background-color: whitesmoke; 
-    border-radius: 2px solid black;
-    font-size: 20px;
-}
-#LogoPrincipal {
-    position: relative;
-    margin-right: 35px;
-    width: 100px;
-    height: 100px;
-}
-/* Fin generales */
-/* NavBar */
-.NavBarCenter {
-    display: flex;
-    justify-content: space-between;
-    width: 965px !important;
-}
-/* Fin NavBar */
-/* Index */
 main {
-    background-color: rgb(185, 185, 185);
+  background-color: rgb(185, 185, 185);
 }
-.ArticleMain1 {
-    display: flex;
-    justify-content: center;
-    background-image: url(../img/Index\ 3.jpeg);
+main section .ArticleMain1 {
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/Index\ 3.jpeg);
 }
-.ArticleMain1
-.Main1{
-    width: 1000px;
-    height: 570px;
-    background-image: url(../img/Index1.jpeg); 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main section .ArticleMain1 .DivMain1 {
+  width: 1000px;
+  height: 570px;
+  background-image: url(../img/Index1.jpeg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.Main1 h1 {
-    width: 400px;
-    height: 320px;
-    font-size: 70px;
-    color: rgb(87, 87, 87);
+main section .ArticleMain1 .DivMain1 h1 {
+  width: 400px;
+  height: 320px;
+  font-size: 70px;
+  color: rgb(87, 87, 87);
 }
-.Main1 p {
-    font-size: 20px;
+main section .ArticleMain1 .DivMain1 p {
+  font-size: 20px;
+  margin-top: 50px;
+}
+main section .ArticleMain2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-image: url(../img/Index2.jpeg);
+  background-repeat: no-repeat;
+  height: 570px;
+}
+main section .ArticleMain2 .DivMain2 {
+  margin-top: 70px;
+  width: 640px;
+  height: 350px;
+  font-size: 40px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 426px) {
+  main section .ArticleMain1 {
+    background-image: none;
+  }
+  main section .ArticleMain1 .DivMain1 {
     margin-top: 50px;
-}
-.ArticleMain2 {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    background-image: url(../img/Index2.jpeg);
-    background-repeat: no-repeat;
-    height: 570px;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-image: none;
+  }
+  main section .ArticleMain1 .DivMain1 p {
+    font-size: 20px;
+    width: auto;
+    height: auto;
+  }
+  main section .ArticleMain1 .DivMain1 h1 {
+    color: black;
+    font-size: 35px;
+    width: auto;
+    height: auto;
+  }
+  main section .ArticleMain2 {
+    background-image: none;
+    display: flex;
+    text-align: center;
+    height: auto;
+  }
+  main section .ArticleMain2 .DivMain2 {
+    margin-top: 60px;
+    margin-right: 0px;
+  }
+  main section .ArticleMain2 .DivMain2 p {
+    font-size: 20px;
+  }
 }
-.DivMain1 {
-    margin-top: 70px;
-    width: 640px;
-    height: 350px;
-    font-size: 40px;  
-    margin-right: 100px;
-}
-/* Fin index */
-/* Quienes somos */
 .MainQS {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Section1QS {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Section1QS .Article1QS h1 {
+  font-size: 40px;
+}
+.Section1QS .Article1QS .Div1QS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin-top: -50px;
+}
+.Section1QS .Article1QS .Div1QS p {
+  font-size: 25px;
+  height: 150px;
+  width: 600px;
+}
+.Section1QS .Article2QS {
+  padding-top: 20px;
+}
+.Section1QS .Article2QS h2 {
+  font-size: 40px;
+}
+.Section1QS .Article2QS .Div2QS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin-top: -50px;
+}
+.Section1QS .Article2QS .Div2QS p {
+  font-size: 25px;
+  height: 150px;
+  width: 600px;
+}
+
+@media screen and (max-width: 426px) {
+  .MainQS {
     display: flex;
-    height: 900px;
-    align-items: center;
-    justify-content: space-around;
-}
-.Section1Qs {
-    padding-top: 20px;
-}
-.Section1QS h1 {
-    font-size: 40px;
-}
-.Section1QS p {
+    flex-direction: column;
+  }
+  .MainQS .Section1QS {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainQS .Section1QS .Article1QS {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .MainQS .Section1QS .Article1QS h1 {
     font-size: 25px;
-    height: 150px;
-    width: 600px;
-}
-.Div1QS {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    margin-top: -50px;
-}
-.Article1QS {
-    position: relative;
-    top: -20px;
-}
-.Section2QS {
-    padding: 40px;
-}
-.Section1QS h2 {
-    font-size: 40px; 
-}
-/* Fin Quienes somos */
-/* Productos */
-.MainP {
-    height: 900px;
-}
-.Div1P {
+  }
+  .MainQS .Section1QS .Article1QS .Div1QS p {
+    font-size: 15px;
+    width: auto;
+  }
+  .MainQS .Section1QS .Article2QS {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
+    text-align: center;
+  }
+  .MainQS .Section1QS .Article2QS h2 {
+    font-size: 25px;
+  }
+  .MainQS .Section1QS .Article2QS .Div2QS p {
+    margin: 10px;
+    font-size: 15px;
+    width: auto;
+  }
+  .MainQS .Section2QS iframe {
+    width: auto;
+    height: auto;
+  }
 }
-.Div2P {
-    padding-top: 20px;
-}
-.ImgP {
-    height: 300px;
-    width: 300px;
-}
-/* Fin de productos */
-/* Galeria */
 .Div1G {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
 }
 .Div1G p {
-    text-align: center;
+  text-align: center;
 }
+
 .Div2G {
-    padding-bottom: 80px;
-    padding-left: 12px;
+  padding-bottom: 80px;
+  padding-left: 12px;
 }
-.ImagenesG {
-    display: flex;
-    justify-content: center;
+.Div2G .ImagenesG {
+  display: flex;
+  justify-content: center;
 }
-.ImgG {
+.Div2G .ImagenesG .DivImg {
+  width: 340px;
+}
+.Div2G .ImagenesG .DivImg .ImgG {
   height: 300px;
   width: 300px;
-  padding-top: 30px;  
-}
-.DivImg {
-    width: 340px;
+  padding-top: 30px;
 }
 
-/* Fin galeria */
-/* Contacto */
 .SectionContacto {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.DatosDeContacto {
-    display: flex;
-    flex-direction: column;
+.SectionContacto .ArticleContact1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding-top: 60px;
+}
+.SectionContacto .ArticleContact1 h1 {
+  position: relative;
+  top: -40px;
+  padding-left: 20px;
+}
+.SectionContacto .ArticleContact1 .DatosDeContacto {
+  display: flex;
+  flex-direction: column;
+}
+.SectionContacto .ArticleContact1 .IconosDeContacto1 {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+.SectionContacto .ArticleContact1 .RedesSociales {
+  display: flex;
+  flex-direction: row;
+}
+.SectionContacto .ArticleFormulario .Formulario {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.SectionContacto .ArticleFormulario .Formulario .ItemsFormulario {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.SectionContacto .ArticleFormulario .Formulario .BotonesFormulario {
+  display: flex;
+  justify-content: center;
+}
 
-}
-.RedesSociales {
-    display: flex;
-    flex-direction: row;
-}
-.ArticleContact1 {
+@media screen and (max-width: 426px) {
+  .SectionContacto {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
-    padding-top: 60px;
-}
-.ArticleContact1 h1 {
-    position: relative;
-    top: -40px;
-    padding-left: 20px;
-
-}
-.IconosDeContacto2 {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-}
-.Formulario {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-.ItemsFormulario {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.BotonesFormulario {
-display: flex;
-justify-content: center;
-}
-@media screen and (max-width:426px){
-    .SectionContacto {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-        margin-right: 18px;
-        justify-content: center;
-    }
-    .ArticleFormulario{
-        padding-left: 10px;
-    }
-    .h1C {
-        padding-top: 20px;
-        text-align: center;
-    }
-    .footer {
-        font-size: 60%;
-        height: 279px;
-    }
-}
-/* Fin Contacto */
-/* Footer */
-footer {
-    background-color: whitesmoke;
-}
-#logoFooter {
-    position: relative;
-    left: 50px;
-    width: 100px;
-    height: 100px;
-    margin-top: 30px;
-
-}
-.footer2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.Footer3 h2 {
-    font-size: 25px;
-}
-.Footer3 {
-    position: relative;
-    margin-top: 15px;
-}
-.ListasFooter {
-    position: relative;
-    right: 25px;
-}
-.Copyright {
-    margin: 10px;
+    text-align: start;
+    margin-right: 18px;
+    justify-content: center;
+  }
+  .ArticleFormulario {
+    padding-left: 10px;
+  }
+  .h1C {
+    padding-top: 20px;
     text-align: center;
+  }
+  .footer {
+    font-size: 60%;
+    height: 279px;
+  }
 }
-@media screen and (max-width:426px){
-.footer2 {
+.SectionP {
+  padding-bottom: 30px;
+}
+.SectionP .Div1P {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: center;
+}
+.SectionP .Div2P {
+  padding-top: 20px;
+}
+.SectionP .Div2P .ImgP {
+  height: 300px;
+  width: 300px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style: none;
+  color: #000;
+}
+
+.header {
+  background-color: whitesmoke;
+  border-radius: 2px solid black;
+  font-size: 20px;
+}
+.header #LogoPrincipal {
+  position: relative;
+  margin-right: 35px;
+  width: 100px;
+  height: 100px;
+}
+.header .NavBarCenter {
+  display: flex;
+  justify-content: space-between;
+  width: 965px !important;
+}
+
+footer {
+  background-color: whitesmoke;
+}
+footer .footer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .footer2 #logoFooter {
+  position: relative;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+}
+footer .Footer3 {
+  position: relative;
+  margin-top: 15px;
+}
+footer .Footer3 h2 {
+  font-size: 25px;
+}
+footer .Footer3 .ListasFooter {
+  position: relative;
+  right: 25px;
+}
+footer .Copyright {
+  margin: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 426px) {
+  .footer2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-.DivLogoFooter {
+  }
+  .DivLogoFooter {
     display: none;
+  }
 }
-}
-/* Fin footer */
 
-
-
-
+/*# sourceMappingURL=Estilos.css.map */

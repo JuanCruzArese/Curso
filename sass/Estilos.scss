@@ -1,0 +1,75 @@
+@use "index";
+@use "QuienesSomos";
+@use "Galeria";
+@use "Contacto";
+@use "Productos";
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;     
+    text-decoration-style:none;     
+    list-style: none;     
+    color: #000;     
+}
+.header {
+    background-color: whitesmoke; 
+    border-radius: 2px solid black;
+    font-size: 20px;
+    #LogoPrincipal {
+        position: relative;
+        margin-right: 35px;
+        width: 100px;
+        height: 100px;
+    }
+    .NavBarCenter {
+        display: flex;
+        justify-content: space-between;
+        width: 965px !important;
+    }
+}
+footer {
+    background-color: whitesmoke;
+    .footer2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        #logoFooter {
+            position: relative;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+        }
+    }
+    .Footer3 {
+        position: relative;
+        margin-top: 15px;
+        h2 {
+            font-size: 25px;
+        }
+        .ListasFooter {
+            position: relative;
+            right: 25px;
+        }
+    }
+    .Copyright {
+        margin: 10px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:426px){
+    .footer2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .DivLogoFooter {
+        display: none;
+    }
+}
+

@@ -1,0 +1,89 @@
+.MainQS {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Section1QS {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .Article1QS {
+        h1 {
+            font-size: 40px;
+        }
+        .Div1QS {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            margin-top: -50px;
+            p {
+                font-size: 25px;
+                height: 150px;
+                width: 600px;
+            }
+        }
+    }
+    .Article2QS {
+        padding-top: 20px;
+        h2 {
+            font-size: 40px; 
+        }
+        .Div2QS {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            margin-top: -50px;
+            p {
+                font-size: 25px;
+                height: 150px;
+                width: 600px;
+            }
+        }
+    }
+}
+@media screen and (max-width:426px){
+    .MainQS {
+        display: flex;
+        flex-direction: column;
+        .Section1QS{
+            display: flex;
+            flex-direction: column;
+            .Article1QS {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                h1 {
+                    font-size: 25px
+                }
+                .Div1QS {
+                    p {
+                        font-size: 15px;
+                        width: auto;
+                    }
+                }
+            }
+            .Article2QS {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                h2 {
+                    font-size: 25px
+                }
+                .Div2QS {
+                    p {
+                        margin: 10px;
+                        font-size: 15px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .Section2QS {
+            iframe{
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.SectionContacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .ArticleContact1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        padding-top: 60px;
+        h1 {
+            position: relative;
+            top: -40px;
+            padding-left: 20px;
+        }
+        .DatosDeContacto {
+            display: flex;
+            flex-direction: column;
+        }
+        .IconosDeContacto1 {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+        }
+        .RedesSociales {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .ArticleFormulario {
+        .Formulario {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+            .ItemsFormulario {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            .BotonesFormulario {
+                display: flex;
+                justify-content: center;
+                } 
+        }
+    }
+}
+@media screen and (max-width:426px){
+    .SectionContacto {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin-right: 18px;
+        justify-content: center;
+    }
+    .ArticleFormulario{
+        padding-left: 10px;
+    }
+    .h1C {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .footer {
+        font-size: 60%;
+        height: 279px;
+    }
+}
