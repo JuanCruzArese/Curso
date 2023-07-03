@@ -6,22 +6,29 @@ main {
             justify-content: center;
             background-image: url(../img/Index\ 3.jpeg);
             .DivMain1 {
-                width: 1000px;
-                height: 570px;
-                background-image: url(../img/Index1.jpeg); 
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                h1 {
-                    width: 400px;
+                background-image: url(../img/Index1.jpeg);
+                height: 570px; 
+                .DivMain2 {
+                    width: 850px;
                     height: 320px;
-                    font-size: 70px;
-                    color: rgb(87, 87, 87);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        font-size: 70px;
+                        color: rgb(0, 0, 0);
+                        position: relative;
+                        top: -13px;
+                    }
                 }
-                p {
-                    font-size: 20px;
-                    margin-top: 50px;
+                .DivMain3 {
+                    display: flex;
+                    justify-content: start;
+                    align-items: end;
+                    height: 242px;
+                    margin-left: 10px;
                 }
             }
         }
@@ -32,7 +39,7 @@ main {
             background-image: url(../img/Index2.jpeg);
             background-repeat: no-repeat;
             height: 570px;
-            .DivMain2 {
+            .DivMain4 {
                 margin-top: 70px;
                 width: 640px;
                 height: 350px;
@@ -42,29 +49,55 @@ main {
         }
     }
 }
+@media screen and (max-width:1600px){
+    main{
+        section{
+            .ArticleMain2{
+                background-image: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .DivMain4 {
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:426px){
     main{
         section{
             .ArticleMain1{
                 background-image: none;
-                .DivMain1{
-                    margin-top: 50px;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    width: auto;
-                    height: auto;
+                .DivMain1 {
                     background-image: none;
-                    p{
-                        font-size: 20px;
+                    height: auto;
+                    .DivMain2{
+                        margin-top: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
                         width: auto;
                         height: auto;
+                        h1 {
+                            color: black;
+                            font-size: 35px;
+                            width: auto;
+                            height: auto;
+                            text-align: center;
+                        }
                     }
-                    h1 {
-                        color: black;
-                        font-size: 35px;
-                        width: auto;
+                    .DivMain3 {
                         height: auto;
+                        margin-left: 0px;
+                        p{
+                            font-size: 20px;
+                            text-align: center;
+                        }
                     }
                 }
             }
@@ -73,12 +106,12 @@ main {
                 display: flex;
                 text-align: center;
                 height: auto;
-                .DivMain2 {
+                .DivMain4 {
                     margin-top: 60px;
                     margin-right: 0px;
-                p{
-                    font-size: 20px;
-                }
+                    p{
+                        font-size: 20px;
+                    }
                 }
             }
         }

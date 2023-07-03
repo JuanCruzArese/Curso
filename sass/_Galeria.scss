@@ -16,10 +16,12 @@
         justify-content: center;
         .DivImg {
             width: 340px;
+            padding-top: 30px;
             .ImgG {
                 height: 300px;
                 width: 300px;
-                padding-top: 30px;  
+                border: 1px solid black;
+                border-radius: 1vh; 
               } 
         }
     }

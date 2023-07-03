@@ -19,6 +19,11 @@ a {
     background-color: whitesmoke; 
     border-radius: 2px solid black;
     font-size: 20px;
+    nav{
+        div{
+            overflow: hidden;
+        }
+    }
     #LogoPrincipal {
         position: relative;
         margin-right: 35px;
